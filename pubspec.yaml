@@ -1,0 +1,32 @@
+name: flutter_app1
+description: Flutter UI Example.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  fonts:
+    - family: Nunito
+      fonts:
+        - asset: fonts/Nunito-Regular.ttf
+        - asset: fonts/Nunito-Light.ttf
+          weight: 300
+        - asset: fonts/Nunito-ExtraLight.ttf
+          weight: 200
+        - asset: fonts/Nunito-Regular.ttf
+        - asset: fonts/Nunito-Italic.ttf
+          style: italic
