@@ -1,0 +1,17 @@
+version: v1.0
+name: Android App Build
+agent:
+  machine:
+    type: e1-standard-2
+  containers:
+    - name: main
+      image: semaphoreci/android:29-flutter
+blocks:
+  - name: Build
+    task:
+      jobs:
+        - name: Hello Android
+          commands:
+            - checkout
+            - sem-version java 1.8
+            - flutter build apk --split-per-abi
